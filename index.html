@@ -1,9 +1,99 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Words for the World</title>
-</head>
-<body>
-  <p>Hello world!</p>
-</body>
+<html lang="en">
+  <head>
+    <title>Words for the World</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Itim">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah">
+    <link href="index.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav>
+      <!-- TODO mobile support -->
+      <!-- TODO logo -->
+      <!-- FIXME nav-links styling -->
+      <a id="brand" class="plain-link" href="/">
+        <!-- <img id="logo" src="logo.png"> -->
+        Words for the World
+      </a>
+      <div class="nav-links">
+        <a class="plain-link focused-link" href="/">Home</a>
+        <a class="plain-link" href="/about">About</a>
+        <a class="plain-link" href="/letters">Send a Letter!</a>
+        <a class="plain-link" href="/faq">FAQ</a>
+        <a class="plain-link" href="/us">Our Team</a>
+        <a class="plain-link" href="/chapters">Chapters</a>
+      </div>
+    </nav>
+
+    <!-- FIXME "letters" in alt text is ambiguous -->
+    <!-- TODO overlay text -->
+    <div>
+      <div id="hero-text-all">
+        <p id="hero-name">Words for the World</p>
+        <p id="hero-text">Spreading love through letters. All hail snail mail!</p>
+      </div>
+      <img id="hero-img" src="hero.jpg" alt="Letters spread out and overlapping">
+    </div>
+
+    <main>
+      <!-- FIXME the top and bottom spacing of the sections isn't perfect -->
+
+      <section id="mission">
+        <h2>Our Mission</h2>
+        <br><hr><br>
+        <p class="substantial-text">
+          Founded in 2023, Words for the World is dedicated to writing and distributing letters to those who need a little love.
+          We partner with various organizations to support seniors, LGBTQIA+ communities, people with disabilities, and more all across the world.
+        </p>
+      </section>
+
+      <section id="difference">
+        <h2>Make a Difference!</h2>
+        <br><br>
+        <div id="actions">
+          <a class="action plain-link" href="/chapters#start">
+            <img src="landmark-solid.svg">
+            <div>Start a Chapter</div>
+          </a>
+          <a class="action plain-link" href="/letters">
+            <img src="envelope-regular.svg">
+            <div>Write a Letter</div>
+          </a>
+          <a class="action plain-link" href="/us#join">
+            <img src="users-solid.svg">
+            <div>Apply for a Leadership Position</div>
+          </a>
+        </div>
+      </section>
+
+      <section id="subscribe">
+        <h2>Subscribe to our Newsletter</h2>
+        <p>Coming soon</p>
+      </section>
+    </main>
+
+    <footer>
+      <a class="plain-link" href="mailto:wwwordsfortheworld@gmail.com">
+        wwwordsfortheworld@gmail.com</a>
+      <br>&copy; 2023 Words for the World
+    </footer>
+
+    <script>
+      const $ = document.querySelector.bind(document);
+      const heroImg = $('#hero-img');
+
+      function adjust() {
+        heroImg.style.position = 'fixed';
+        $('main').style.marginTop = heroImg.offsetHeight + 'px';
+
+        const heroTextAll = $('#hero-text-all');
+        heroTextAll.style.marginTop =
+          (heroImg.offsetHeight/2 - heroTextAll.offsetHeight/2) + 'px';
+      }
+
+      window.onresize = adjust;
+      window.onload = adjust;
+    </script>
+  </body>
 </html>

@@ -1,0 +1,160 @@
+/* Based on: (actually not right now but potentially in the future)
+ * Min CSS; copyright: 2014 Owen Versteeg; license: MIT
+ * Picnic CSS; copyright: 2014 Francisco Presencia; license: MIT
+ */
+
+/* good:
+ * no-js reactive menu from min css
+ *  - picnic has something similar: worse ui, buggy animation in safari, but more compatible w/ devtools
+ */
+
+:root {
+  --light-green: #c0cdb2;
+  --medium-green: #a6bb93;
+  --dark-green: #697959;
+  --light-yellow: #f8f4dc;
+  --light-orange: #f4dbcf;
+}
+
+body {
+  font: 20px "Itim", sans-serif !important;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+}
+
+* {
+  overscroll-behavior-y: none;
+}
+
+#logo {
+  vertical-align: -0.125em;
+  height: 2em;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  /* FIXME awkward jump when scrolling on ios (esp in fx) */
+  position: sticky;
+  padding: 20px;
+  inset: 0 0 auto 0;
+  background: var(--light-green);
+}
+
+.nav-links {
+  border: thin solid var(--dark-green);
+  background: var(--dark-green);
+}
+
+.nav-links a {
+  background: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0;
+}
+
+.focused-link {
+  background: var(--medium-green) !important;
+}
+
+#hero-img {
+  width: 100%;
+  z-index: -2;
+}
+
+/* FIXME margin-top > margin-bottom */
+/* FIXME invisible with javascript disabled */
+#hero-text-all {
+  color: white;
+  text-align: center;
+  inset: auto 0 auto 0;
+  position: fixed;
+  z-index: -1;
+}
+
+#hero-name {
+  font: 60px "Gloria Hallelujah", sans-serif;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+#hero-text {
+  margin: 0 auto;
+  font-size: 30px;
+}
+
+main {
+  background: white;
+}
+
+h1, h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+section {
+  padding: 60px;
+}
+
+#mission {
+  background: var(--light-yellow);
+}
+
+#subscribe {
+  background: var(--light-green);
+}
+
+hr {
+  width: 100px;
+}
+
+#actions {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.action {
+  text-align: center;
+}
+
+.action img {
+  width: 50%;
+}
+
+.action div {
+  background: var(--light-orange);
+  border-radius: 10px;
+  padding: 10px 5px;
+  width: 150px; /* FIXME hardcoding bad? */
+}
+
+footer {
+  background: var(--light-yellow);
+  text-align: center;
+  font-size: small;
+}
+
+.plain-link {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.substantial-text {
+  text-align: center;
+  line-height: 1.5;
+  margin: auto 100px;
+}
+
+@media screen and (min-width: 320px) {
+  /* XXX this doesn't seem like something we should have to do ourselves */
+/*  body {
+    font-size: 60px !important;
+  }
+  footer {
+    font-size: 30px;
+  }
+*/}
