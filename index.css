@@ -8,12 +8,15 @@
  *  - picnic has something similar: worse ui, buggy animation in safari, but more compatible w/ devtools
  */
 
+/* INDEX.HTML */
+
 :root {
   --light-green: #c0cdb2;
   --medium-green: #a6bb93;
   --dark-green: #697959;
   --light-yellow: #f8f4dc;
   --light-orange: #f4dbcf;
+  --brown: #84715c;
 }
 
 body {
@@ -147,6 +150,30 @@ footer {
   text-align: center;
   line-height: 1.5;
   margin: auto 100px;
+}
+
+/* ABOUT.HTML */
+
+.about-title {
+  font: 40px "Gloria Hallelujah", sans-serif;
+  color: var(--brown);
+  text-align: left;
+}
+
+.quote {
+  width: 60%;
+}
+
+blockquote p::before {
+  content: '\201C';
+  color: var(--light-green);
+  font-size: 50px;
+  font-family: serif;
+}
+
+.align-right {
+  margin-left: auto;
+  margin-right: 0;
 }
 
 @media screen and (min-width: 320px) {

@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta description="Words for the World - Spreading love through letters">
     <title>Words for the World</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Itim">
+    <!-- TODO seems unnecessary to load an entire font just for 16 characters -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah">
     <link href="index.css" rel="stylesheet">
   </head>
@@ -18,22 +22,21 @@
       </a>
       <div class="nav-links">
         <a class="plain-link focused-link" href="/">Home</a>
-        <a class="plain-link" href="/about">About</a>
-        <a class="plain-link" href="/letters">Send a Letter!</a>
-        <a class="plain-link" href="/faq">FAQ</a>
-        <a class="plain-link" href="/us">Our Team</a>
-        <a class="plain-link" href="/chapters">Chapters</a>
+        <a class="plain-link" href="/about.html">About</a>
+        <a class="plain-link" href="/letters.html">Send a Letter!</a>
+        <a class="plain-link" href="/faq.html">FAQ</a>
+        <a class="plain-link" href="/us.html">Our Team</a>
+        <a class="plain-link" href="/chapters.html">Chapters</a>
       </div>
     </nav>
 
     <!-- FIXME "letters" in alt text is ambiguous -->
-    <!-- TODO overlay text -->
     <div>
       <div id="hero-text-all">
         <p id="hero-name">Words for the World</p>
         <p id="hero-text">Spreading love through letters. All hail snail mail!</p>
       </div>
-      <img id="hero-img" src="hero.jpg" alt="Letters spread out and overlapping">
+      <img id="hero-img" src="/hero.jpg" alt="Letters spread out and overlapping">
     </div>
 
     <main>
@@ -53,15 +56,15 @@
         <br><br>
         <div id="actions">
           <a class="action plain-link" href="/chapters#start">
-            <img src="landmark-solid.svg">
+            <img src="landmark-solid.svg" alt="Landmark icon" width="20">
             <div>Start a Chapter</div>
           </a>
           <a class="action plain-link" href="/letters">
-            <img src="envelope-regular.svg">
+            <img src="envelope-regular.svg" alt="Envelope icon" width="20">
             <div>Write a Letter</div>
           </a>
           <a class="action plain-link" href="/us#join">
-            <img src="users-solid.svg">
+            <img src="users-solid.svg" alt="Users icon" width="20">
             <div>Apply for a Leadership Position</div>
           </a>
         </div>
