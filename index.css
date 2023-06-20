@@ -206,7 +206,20 @@ blockquote p::before {
 
 /* UNFIN */
 
-@media screen and (min-width: 320px) {
+@media (pointer: none), (pointer: coarse) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  .align-right {
+    margin: 0;
+  }
+  .quote {
+    width: 100%;
+  }
+  section > div {
+    flex-direction: column;
+  }
   /* XXX this doesn't seem like something we should have to do ourselves */
 /*  body {
     font-size: 60px !important;
