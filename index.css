@@ -270,6 +270,47 @@ blockquote p::before {
   section > div {
     flex-direction: column;
   }
+
+  #chapters-1 div {
+    width: 100% !important;
+    padding: 0 !important;
+  }
+
+  #chapters-1 hr {
+    display: none;
+  }
+
+  #chapters-foundation-organization {
+    font-size: 40px;
+  }
+
+  #chapters-2 h3 {
+    margin-bottom: 10px;
+  }
+
+  #chapters-3 div div {
+    width: 92% !important;
+  }
+
+  #chapters-3 h3 {
+    margin-bottom: 20px;
+  }
+
+  #chapters-3 {
+    padding: 30px !important;
+  }
+
+  #chapters-4 div {
+    width: 85% !important;
+  }
+
+  #chapters-4 {
+    padding: 30px !important;
+  }
+
+  #chapters-5 {
+    padding: 0;
+  }
 }
 
 @media (max-width: 800px) {
