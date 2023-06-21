@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta description="Words for the World - Spreading love through letters">
+    <title>Words for the World</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Itim">
+    <!-- TODO seems unnecessary to load an entire font just for 16 characters -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah">
+    <link href="index.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav>
+      <!-- TODO mobile support -->
+      <!-- TODO logo -->
+      <!-- FIXME nav-links styling -->
+      <a id="brand" class="plain-link" href="/">
+        <!-- <img id="logo" src="logo.png"> -->
+        Words for the World
+      </a>
+      <div class="nav-links">
+        <a class="plain-link" href="/">Home</a>
+        <a class="plain-link" href="/about.html">About</a>
+        <a class="plain-link" href="/letters.html">Send a Letter!</a>
+        <a class="plain-link" href="/faq.html">FAQ</a>
+        <a class="plain-link" href="/us.html">Our Team</a>
+        <a class="plain-link focused-link" href="/chapters.html">Chapters</a>
+      </div>
+      <label for="menu-checkbox" id="menu-btn-visible">
+        <img src="/bars-solid.svg" alt="Menu icon" width="20">
+      </label>
+    </nav>
+    <input type="checkbox" id="menu-checkbox">
+    <div id="mobile-menu">
+      <a class="plain-link" href="/">Home</a>
+      <a class="plain-link" href="/about.html">About</a>
+      <a class="plain-link" href="/letters.html">Send a Letter!</a>
+      <a class="plain-link" href="/faq.html">FAQ</a>
+      <a class="plain-link" href="/us.html">Our Team</a>
+      <a class="plain-link focused-link" href="/chapters.html">Chapters</a>
+    </div>
+
+    <main>
+      <section>
+        <div style="display:flex; justify-content:space-between">
+          <div style="width:40%; background:var(--dark-green); font-size:60px; color:white; padding:40px">
+            Chapters make up the foundation of our organization
+            <br><hr style="float:left">
+          </div>
+
+          <div style="width:40%; background:var(--light-yellow); color:var(--brown); padding:40px">
+            <p>
+              Start a chapter today!
+              Check our list of chapters to see if your city or school already has one.
+              If not, create one!
+            </p>
+            <p>
+              As a chapter head, you'll be practicing leadership while coordinating with members to write and send letters.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Current Existing Chapters</h2>
+        <hr>
+        <!-- TODO make these dropdowns? -->
+        <div style="display:flex; justify-content:space-around">
+          <div>
+            <h3 style="text-align:center">School-based</h3>
+            <ul style="list-style-type:none">
+              <li>Stanford Online High School</li>
+            </ul>
+          </div>
+          <div>
+            <h3 style="text-align:center">City-based</h3>
+            <ul style="list-style-type:none">
+              <li>San Ramon, CA</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>How Does It Work?</h2>
+        <br>
+        <div style="display:flex; justify-content:space-between">
+          <div style="width:30%; background:var(--light-yellow)">
+            <h3 style="color:var(--brown); text-align:center">Step 1:</h3>
+            <div style="background:var(--light-yellow); padding:20px">
+              Words for the World sends letter-writing guidelines to chapter heads at the beginning of each month.
+              These guidelines include information on who the chapters will be writing to, rules to follow when writing the letters, and the deadline for sending letters to our P.O. box.
+            </div>
+          </div>
+
+          <div style="width:30%; background:var(--light-yellow)">
+            <h3 style="color:var(--brown); text-align:center">Step 2:</h3>
+            <div style="background:var(--light-yellow); padding:20px">
+              Chapter heads communicate Words for the World's guidelines to their chapter.
+              They then facilitate the chapter's letter-writing process at their own discretion, proofread the letters, and send them off to our P.O. box.
+            </div>
+          </div>
+
+          <div style="width:30%; background:var(--light-yellow)">
+            <h3 style="color:var(--brown); text-align:center">Step 3:</h3>
+            <div style="background:var(--light-yellow); padding:20px">
+              Once received, Words for the World will proofread the letters one last time before sending them off to their recipients.
+              We do NOT include any of the chapters' identifying information including address, names, contact information, etc.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 id="start">Starting a Chapter</h2>
+        <br>
+        <div style="display:flex; justify-content:space-between">
+          <div style="width:40%; background:var(--light-yellow); padding:40px">
+            <h3 style="color:var(--brown); text-align:center">Based in your school:</h3>
+            <p>
+              Create a Words for the World club at your school to create a letter-writing community among your peers. If you are interested in starting a Words for the World club, please fill out the form below. We also suggest taking a good look at your school guidelines on starting clubs.
+            </p>
+            <br>
+            <div style="width:60%; margin:0 auto; text-align:center; background:var(--light-green); padding:15px; border:hidden; border-radius:20px">
+              <a class="plain-link" href="https://forms.gle/p9CeKETFUf2Xn4aF6">Go to Form</a>
+            </div>
+          </div>
+
+          <div style="width:40%; background:var(--light-yellow); padding:40px">
+            <h3 style="color:var(--brown); text-align:center">Based in your city:</h3>
+            <p>
+              To create a Words for the World chapter in your city, you will need to have a &ldquo;base&rdquo; to hold the majority of meetings.
+              The base can be online (e.g. Discord), physical (e.g. local library), or a combination.
+              You will also need a method to collect member written letters; one method is to have a drop-in box at a local library.
+            </p>
+            <br>
+            <div style="width:60%; margin:0 auto; text-align:center; background:var(--light-green); padding:15px; border:hidden; border-radius:20px">
+              <a class="plain-link" href="https://forms.gle/UrftkMBeWo79XLT59">Go to Form</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Frequently Asked Questions</h2>
+        <br>
+        <div class="qna">
+          <p>Are there guidelines for writing letters?</p>
+          <p>
+            Words for the World updates club heads on who to send letters to and special guidelines to follow monthly.
+            The organization receiving the letters will often change and with them, the guidelines will too.
+          </p>
+        </div><br>
+
+        <div class="qna">
+          <p>Can the chapters be co-lead?</p>
+          <p>
+            Yes, chapters can assign leadership roles as needed.
+            Please contact Words for the World through email to update the Chapters page to reflect all leadership roles. 
+          </p>
+        </div><br>
+
+        <div class="qna">
+          <p>What are the responsibilities of the head?</p>
+          <p>
+            The head is responsible for communicating with Words of the World and sharing important information with members of the chapter.
+            Heads are also expected to mail the chapter's letters to Words for the World, ensure that letters follow guidelines, and manage volunteer hours.
+            More details are given at the chapter head orientation.
+          </p>
+        </div><br>
+
+        <div class="qna">
+          <p>Can members receive volunteer hours?</p>
+          <p>
+            Yes! We give 30 minutes per letter written.
+            Volunteer forms should usually be signed by the chapter faculty advisor (school chapters) or by the parent of the chapter head.
+            Keep in mind that our organization is not yet officially registered as a 501c3 nonprofit.
+            If a signature from an official nonprofit is needed, we can ask one our registered partnering organizations.
+          </p>
+        </div><br>
+
+        <div class="qna">
+          <p>Can chapters start a social media page?</p>
+          <p>
+            Absolutely! In fact, chapters are encouraged to do this and engage in other efforts to grow as a group.
+            And if you tag us on a social media platform, we'll try to repost you.
+          </p>
+        </div><br>
+
+        <div class="qna">
+          <p>What are some example activities/meetings that chapters can engage in?</p>
+          <p>
+            Other than hosting letter-writing workshops, chapters might choose to engage in other letter related activities such as running a letter-writing station at their local fair/farmer's market/festival, hosting a "letters to the student body" school event, and learning about the history of letter-writing.
+          </p>
+        </div>
+    </main>
+
+    <footer>
+      <a class="plain-link" href="mailto:wwwordsfortheworld@gmail.com">
+        wwwordsfortheworld@gmail.com</a>
+      <br>&copy; 2023 Words for the World
+    </footer>
+  </body>
+</html>

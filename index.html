@@ -18,7 +18,7 @@
       <!-- TODO logo -->
       <!-- FIXME nav-links styling -->
       <a id="brand" class="plain-link" href="/">
-        <!-- <img id="logo" src="logo.png"> -->
+        <!-- <img src="logo.png"> -->
         Words for the World
       </a>
       <div class="nav-links">
@@ -29,15 +29,26 @@
         <a class="plain-link" href="/us.html">Our Team</a>
         <a class="plain-link" href="/chapters.html">Chapters</a>
       </div>
+      <label for="menu-checkbox" id="menu-btn-visible">
+        <img src="/bars-solid.svg" alt="Menu icon" width="20">
+      </label>
     </nav>
+    <input type="checkbox" id="menu-checkbox">
+    <div id="mobile-menu">
+      <a class="plain-link focused-link" href="/">Home</a>
+      <a class="plain-link" href="/about.html">About</a>
+      <a class="plain-link" href="/letters.html">Send a Letter!</a>
+      <a class="plain-link" href="/faq.html">FAQ</a>
+      <a class="plain-link" href="/us.html">Our Team</a>
+      <a class="plain-link" href="/chapters.html">Chapters</a>
+    </div>
 
-    <!-- FIXME "letters" in alt text is ambiguous -->
     <div>
       <div id="hero-text-all">
         <p id="hero-name">Words for the World</p>
         <p id="hero-text">Spreading love through letters. All hail snail mail!</p>
       </div>
-      <img id="hero-img" src="/hero.jpg" alt="Letters spread out and overlapping">
+      <img id="hero-img" src="/hero.jpg" alt="Letters and envelopes spread out and overlapping">
     </div>
 
     <main>
@@ -56,17 +67,13 @@
         <h2>Make a Difference!</h2>
         <br><br>
         <div id="actions">
-          <a class="action plain-link" href="/chapters#start">
+          <a class="action plain-link" href="/chapters.html#start">
             <img src="landmark-solid.svg" alt="Landmark icon" width="20">
             <div>Start a Chapter</div>
           </a>
-          <a class="action plain-link" href="/letters">
+          <a class="action plain-link" href="/letters.html">
             <img src="envelope-regular.svg" alt="Envelope icon" width="20">
             <div>Write a Letter</div>
-          </a>
-          <a class="action plain-link" href="/us#join">
-            <img src="users-solid.svg" alt="Users icon" width="20">
-            <div>Apply for a Leadership Position</div>
           </a>
         </div>
       </section>
@@ -83,6 +90,10 @@
       <br>&copy; 2023 Words for the World
     </footer>
 
+    <!-- XXX idea for doing (some of) this in plain css:
+      use e.g. flexbox to center align the text relative to the image (at least on one axis),
+      then perhaps use e.g. float: to overlay them?
+    -->
     <script>
       const $ = document.querySelector.bind(document);
       const heroImg = $('#hero-img');
