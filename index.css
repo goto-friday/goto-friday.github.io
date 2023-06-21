@@ -199,6 +199,10 @@ blockquote p::before {
   margin: 0 auto;
 }
 
+.qna-q {
+  font-weight: bold;
+}
+
 /* LETTERS.HTML */
 
 .letters-examples {
@@ -228,6 +232,31 @@ blockquote p::before {
   * {
     padding: 0;
     margin: 0;
+  }
+
+  #mission {
+    padding: 0;
+  }
+
+  .substantial-text {
+    margin: auto 20px;
+  }
+
+  #hero-name {
+    font-size: 30px;
+  }
+
+  #hero-text {
+    font-size: 20px;
+    margin: 0 5px;
+  }
+
+  hr {
+    margin: 0 auto;
+  }
+
+  h2 {
+    padding-top: 20px;
   }
 
   .align-right {
