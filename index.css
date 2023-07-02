@@ -1,15 +1,3 @@
-/* Based on: (actually not right now but potentially in the future)
- * Min CSS; copyright: 2014 Owen Versteeg; license: MIT
- * Picnic CSS; copyright: 2014 Francisco Presencia; license: MIT
- */
-
-/* good:
- * no-js reactive menu from min css
- *  - picnic has something similar: worse ui, buggy animation in safari, but more compatible w/ devtools
- */
-
-/* INDEX.HTML */
-
 :root {
   --light-green: #c0cdb2;
   --medium-green: #a6bb93;
